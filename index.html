@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/x-icon" href="/SPLITTER.ico">
+
+    <script
+      src="https://kit.fontawesome.com/c1cfd8458f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="Styles/style.css" />
+
+    <link rel="stylesheet" href="Styles/queries.css" />
+
+    <title>Splitter</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">
+        <img src="img/logo.svg" alt="Splitter" class="logo-img" />
+      </a>
+    </header>
+    <main>
+      <div class="calculator">
+        <div class="left">
+          <div class="bill-input">
+            <label for="bill" class="bill-label"
+              ><p>Bill</p>
+              <p class="error for-bill">Can't Be Zero!</p>
+            </label>
+            <input type="number" name="bill" id="bill" class="bill" />
+          </div>
+          <div class="tips-section">
+            <h2 class="tip-header">Select Tip &#37;</h2>
+            <div class="tips">
+              <button class="tip-amount ta-one">5&#37;</button>
+              <button class="tip-amount ta-two">10&#37;</button>
+              <button class="tip-amount ta-three">15&#37;</button>
+              <button class="tip-amount ta-four">25&#37;</button>
+              <button class="tip-amount ta-five">50&#37;</button>
+              <button class="tip-amount ta-six active-tip">15&#37;</button>
+              <input
+                type="number"
+                name="custom-tip"
+                id="custom-tip"
+                class="custom-tip"
+                placeholder="Custom"
+              />
+            </div>
+          </div>
+          <div class="people-input">
+            <label for="people" class="people-label"
+              ><p>Number Of People</p>
+              <p class="error for-people">Can't Be Zero!</p>
+            </label>
+            <input type="number" name="people" id="people" class="people" />
+          </div>
+        </div>
+        <div class="right">
+          <div class="amounts">
+            <div class="amount-per-person">
+              <div class="text">
+                <p class="amount">Tip Amount</p>
+                <p class="person">&#47; Person</p>
+              </div>
+              <div class="payment payment-tip-per-person">
+                <p>&#36;0.00</p>
+              </div>
+            </div>
+            <div class="total-per-person">
+              <div class="text">
+                <p class="amount">Total</p>
+                <p class="person">&#47; Person</p>
+              </div>
+              <div class="payment payment-total-per-person">
+                <p>&#36;0.00</p>
+              </div>
+            </div>
+            <button class="reset">RESET</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
